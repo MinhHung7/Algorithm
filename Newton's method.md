@@ -1,9 +1,9 @@
-Problem: tính xấp xỉ nghiệm của một phương trình f(x)
-Vd: tính xấp xỉ sqrt(n) => f(x) = x^2 - n;
-    Tính nghiệm xấp xỉ x^3-2x^2+5x-4 = 0;
-Phương pháp:
-    Nghiệm cần tìm x_(n+1) = x_n - f(x_n)/f'(x_n)
+# Problem: tính xấp xỉ nghiệm của một phương trình f(x)
+## Vd: - Tính xấp xỉ sqrt(n) => f(x) = x^2 - n;
+##     - Tính nghiệm xấp xỉ x^3-2x^2+5x-4 = 0;
+## Phương pháp: Nghiệm cần tìm x_(n+1) = x_n - f(x_n)/f'(x_n)
 Vd: tính xấp xỉ sqrt(n)
+```cpp
 int mySqrt(int n) {
         if(n==0) return 0;
         if(n==1) return 1;
@@ -18,3 +18,4 @@ int mySqrt(int n) {
         }
         return (int)x1;
     }
+```
