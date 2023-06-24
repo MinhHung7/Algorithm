@@ -1,5 +1,5 @@
-# Vấn đề: Cho một số nguyên dương n. Kiểm tra xem n có là lũy thừa 2 của x hay không
-## Chứng minh: n = $2^x$
+# Vấn đề: Cho một số nguyên dương n. Kiểm tra xem n có là lũy thừa của a hay không
+# Chứng minh: n = $2^x$
 ## Hướng giải quyết:
 - Xét các ví dụ về các lũy thừa của 2
   - 1: 0b1
@@ -11,4 +11,6 @@
   - 2 - 1: 0b1&#8195;&#8195;&#8195;&#8195;&#8195;=> 2 & 1 = 0b10 & 0b1 = 0
   - 4 - 1: 0b11 &#8195;&#8195;&#8195;&#8195;=> 4 & 3 = 0b100 & 0b11 = 0
   - 8 - 1: 0b111&#8195;&#8195;&#8195;&#8195;=> 8 & 7 = 0b1000 & 0b111 = 0
-## Kết luận : n = $2^x$  <=> n & (n - 1) == 0
+## Kết luận : n = $2^x$  <=> (n > 1) && (n & (n - 1) == 0)
+# Chứng minh: n = $4^x$
+## Kết luận: n = $4^x$ <=> (n > 1) && (n & (n - 1) == 0) && (n % 3 == 1)
